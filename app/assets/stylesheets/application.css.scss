@@ -29,7 +29,7 @@ a {
 }
 
 #sidebar {
-	width: 200px;
+	width: 160px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -46,7 +46,7 @@ a {
 	ul {
 		list-style: none;
 		text-align: right;
-		padding-right: 3em;
+		padding-right: 2em;
 		.category {
 			font-weight: 700;
 			font-size: 0.7em;
@@ -76,6 +76,25 @@ a {
 		top: 80%;
 		font-size: .8em;
 		color: #9eafba;
+		&:hover {
+			color: #33acb7;
+			a {
+				color: #33acb7 !important;
+			}
+		}
+	}
+	.register {
+		position: absolute;
+		right: 3em;
+		top: 75%;
+		font-size: .8em;
+		color: #9eafba;
+		&:hover {
+			color: #33acb7;
+			a {
+				color: #33acb7 !important;
+			}
+		}
 	}
 }
 
@@ -103,7 +122,7 @@ a {
 }
 
 #main_content {
-	margin-left: 200px;
+	margin-left: 160px;
 	#header {
 		padding: 1em 3em;
 		border-bottom: 1px solid #d6dce0;

@@ -2,9 +2,9 @@
 <html>
 <head>
   <title>Blog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= stylesheet_link_tag 'application', 'https://fonts.google.com/css?family=Railway:400,700' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -28,7 +28,8 @@
 		</ul>
 
 		<% if !user_signed_in? %>
-			<p class="sign_in"><%= link_to "Admin Login", new_user_session_path %></p>
+			<p class="sign_in"><%= link_to "Login", new_user_session_path %></p>
+      <p class="register"><%= link_to('Register', new_user_registration_path)  %></p>
 		<% end %>
 	</div>
 

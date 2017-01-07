@@ -18,8 +18,6 @@ gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder'
 
@@ -37,6 +35,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
+gem 'tinymce-rails'
 
 group :development, :test do
   # Call 'debugger' anywhere in the code to stop execution and get a debugger console
