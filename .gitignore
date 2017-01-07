@@ -1,7 +1,0 @@
-/db/*.sqlite3
-/log/*.log
-/tmp/
-config/google_analytics.yml
-.DS_Store
-/nbproject/
-public/assets/**
