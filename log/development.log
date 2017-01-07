@@ -6330,3 +6330,290 @@ Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for ::1 at 2017-01-07
 Started GET "/assets/tinymce/skins/lightgray/content.min.css" for ::1 at 2017-01-07 12:18:23 -0700
 Started GET "/assets/tinymce/plugins/codesample/css/prism.css" for ::1 at 2017-01-07 12:18:23 -0700
 Started GET "/assets/tinymce/skins/lightgray/fonts/tinymce.woff" for ::1 at 2017-01-07 12:18:23 -0700
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/cdiaz/Documents/Code/Blog/app/models/user.rb:1)
+Started GET "/" for ::1 at 2017-01-07 12:41:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (10.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (27.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (54.8ms)
+  [1m[36mUser Load (37.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1848ms (Views: 1767.9ms | ActiveRecord: 74.5ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-01-07 12:42:03 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 76ms (Views: 67.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-01-07 12:42:05 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (29.4ms)
+  Rendered posts/edit.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 68ms (Views: 56.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/codesample/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/imagetools/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/media/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/image/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/link/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/table/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/insertdatetime/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/charmap/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/print/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/autoresize/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/code/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/preview/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/searchreplace/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/visualblocks/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/anchor/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/plugins/codesample/css/prism.css" for ::1 at 2017-01-07 12:42:06 -0700
+Started GET "/assets/tinymce/skins/lightgray/fonts/tinymce.woff" for ::1 at 2017-01-07 12:42:06 -0700
+Started PATCH "/posts/4" for ::1 at 2017-01-07 12:42:41 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3pkVy73PfBxDK17eODczx0CTvsUzQN13PeIlrBBTNsoAjlUcMi52xc37jQPYln1UryOAvuDuTmmWNtwchOWCjQ==", "post"=>{"title"=>"ANOTHA", "body"=>"<pre class=\"language-markup\"><code>&lt;b&gt;testt&lt;/b&gt;</code></pre>\r\n<pre>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></pre>"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "<pre class=\"language-markup\"><code>&lt;b&gt;testt&lt;/b&gt;</code></pre>\r\n<pre>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></pre>"], ["updated_at", 2017-01-07 19:42:41 UTC], ["id", 4]]
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 27ms (ActiveRecord: 19.8ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-01-07 12:42:41 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (37.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 74ms (Views: 34.0ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-01-07 12:42:53 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.1ms)
+  Rendered posts/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 39ms (Views: 33.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/image/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/autoresize/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/link/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/code/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/imagetools/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/codesample/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/media/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/table/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/charmap/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/insertdatetime/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/print/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/preview/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/anchor/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/searchreplace/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/visualblocks/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/plugins/codesample/css/prism.css" for ::1 at 2017-01-07 12:42:54 -0700
+Started GET "/assets/tinymce/skins/lightgray/fonts/tinymce.woff" for ::1 at 2017-01-07 12:42:54 -0700
+Started PATCH "/posts/4" for ::1 at 2017-01-07 12:43:31 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mij9zQaHi6jjl32j/1ZEY08tPkEqMf8O+e6BRmMIcZ5EP70aiWaBcW1Hrn4f9wrwoJ0AOvmfbBBSOnj2977F2Q==", "post"=>{"title"=>"ANOTHA", "body"=>"<pre class=\"language-markup\"><code>&lt;b&gt;testt&lt;/b&gt;</code></pre>\r\n<pre>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></pre>"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-01-07 12:43:31 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 91ms (Views: 88.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-01-07 12:43:36 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.0ms)
+  Rendered posts/edit.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/image/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/link/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/imagetools/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/code/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/autoresize/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/codesample/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/media/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/table/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/insertdatetime/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/charmap/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/print/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/preview/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/anchor/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/searchreplace/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/visualblocks/plugin.js" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/plugins/codesample/css/prism.css" for ::1 at 2017-01-07 12:43:36 -0700
+Started GET "/assets/tinymce/skins/lightgray/fonts/tinymce.woff" for ::1 at 2017-01-07 12:43:36 -0700
+Started PATCH "/posts/4" for ::1 at 2017-01-07 12:43:53 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VvawURjVxOPhM1Cm0UQiafXPQx4kayzb/XUNMD0XRo6I4fCGlzTOOm/jg3sx5Wz6Gn99ZffFv8VWofSAqaHyyQ==", "post"=>{"title"=>"ANOTHA", "body"=>"<p class=\"language-markup\"><code>&lt;b&gt;testt&lt;/b&gt;</code></p>\r\n<pre>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></pre>"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "<p class=\"language-markup\"><code>&lt;b&gt;testt&lt;/b&gt;</code></p>\r\n<pre>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></pre>"], ["updated_at", 2017-01-07 19:43:53 UTC], ["id", 4]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 15ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-01-07 12:43:53 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 27.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/4/edit" for ::1 at 2017-01-07 12:43:55 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/edit.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 51ms (Views: 47.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/image/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/code/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/autoresize/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/link/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/codesample/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/media/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/imagetools/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/table/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/insertdatetime/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/print/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/anchor/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/charmap/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/searchreplace/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/preview/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/visualblocks/plugin.js" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/plugins/codesample/css/prism.css" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/assets/tinymce/skins/lightgray/fonts/tinymce.woff" for ::1 at 2017-01-07 12:43:55 -0700
+Started GET "/posts/4/edit" for ::1 at 2017-01-07 12:44:20 -0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 34ms (Views: 30.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/tinymce/themes/modern/theme.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/code/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/image/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/link/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/autoresize/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/codesample/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/media/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/imagetools/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/charmap/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/table/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/insertdatetime/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/preview/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/print/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/anchor/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/visualblocks/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/fullscreen/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/plugins/searchreplace/plugin.js" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/skins/lightgray/skin.min.css" for ::1 at 2017-01-07 12:44:20 -0700
+Started GET "/assets/tinymce/skins/lightgray/content.min.css" for ::1 at 2017-01-07 12:44:21 -0700
+Started GET "/assets/tinymce/plugins/codesample/css/prism.css" for ::1 at 2017-01-07 12:44:21 -0700
+Started GET "/assets/tinymce/skins/lightgray/fonts/tinymce.woff" for ::1 at 2017-01-07 12:44:21 -0700
+Started PATCH "/posts/4" for ::1 at 2017-01-07 12:44:53 -0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OHEyOjnpCfHdiyXuwZzCL6NsX2Xs8QUkr2vtlHZ65ljmZnLttggDKFNb9jMhPYy8TNxhHj9fljoEvxQk4sxSHw==", "post"=>{"title"=>"ANOTHA", "body"=>"<pre class=\"language-markup\"><code>&lt;b&gt;bold&lt;/b&gt;</code></pre>\r\n<p class=\"language-markup\"><code></code>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></p>"}, "commit"=>"Update Post", "id"=>"4"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "body" = $1, "updated_at" = $2 WHERE "posts"."id" = $3[0m  [["body", "<pre class=\"language-markup\"><code>&lt;b&gt;bold&lt;/b&gt;</code></pre>\r\n<p class=\"language-markup\"><code></code>asdmasda<br />;sdasascsacksa'cmsal'cm<br /><em><strong>ascmCMSDCNAS</strong></em><br /><em><strong>DCASDCNSA'DC</strong></em><br /><em><strong>ASC'ASC</strong></em><br /><em><strong>ASDC</strong></em></p>"], ["updated_at", 2017-01-07 19:44:53 UTC], ["id", 4]]
+  [1m[35m (17.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 32ms (ActiveRecord: 24.1ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-01-07 12:44:53 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2017-01-07 12:44:55 -0700
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/4" for ::1 at 2017-01-07 12:44:57 -0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered posts/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.7ms)
+
+
